@@ -24,11 +24,12 @@ typedef enum : NSUInteger {
 // 空的label , tag 代表位置，拿到该lable取tag,即可拿到位置
 @property (nonatomic ,retain) UILabel   *zeroLable;
 @property (nonatomic ,assign) CGPoint   zeroEndLocation;
+
+// 记录历史路径，历史路径不让走
+@property (nonatomic ,retain) NSMutableDictionary *historyRoad;
 @end
 
 @implementation ViewController
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
